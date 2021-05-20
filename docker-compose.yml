@@ -1,0 +1,11 @@
+version: '2'
+services:
+  web:
+    build: .
+    env_file:
+    - .env
+    command: bash -c "rackup "
+    volumes:
+      - .:/bank-slip-validator
+    ports:
+      - "9292:9292"
