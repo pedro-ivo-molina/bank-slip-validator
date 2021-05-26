@@ -11,6 +11,8 @@ class BankSlipValidator < Sinatra::Base
   post '/validate' do
     bank_slip = params[:file][:tempfile].readlines
 
+    p params
+
     book = BookOfRules.new
     header_rules = book.list_header_rules
     body_rules = book.list_body_rules
