@@ -1,5 +1,5 @@
 source 'http://rubygems.org'
-ruby "2.5.0"
+ruby "3.0.0"
 gem 'sinatra'
 gem 'bugsnag'
 gem 'rack-ssl'
@@ -14,7 +14,6 @@ gem 'nokogiri'
 gem 'sinatra-strong-params'
 
 group :development,:test do
-  gem "dotenv", "~> 2.2"
   gem "pry-byebug"
 end
 
