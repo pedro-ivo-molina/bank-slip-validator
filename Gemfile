@@ -13,12 +13,8 @@ gem 'activesupport'
 gem 'nokogiri'
 gem 'sinatra-strong-params'
 
-group :development,:test do
-  gem "pry-byebug"
-end
+gem "pry-byebug"
 
-group :test do
-  gem "rspec", "~> 3.6"
-  gem "rack", "~> 2.0"
-  gem "rack-test", "~> 0.7.0"
-end
+gem "rspec", "~> 3.6"
+gem "rack", "~> 2.0"
+gem "rack-test", "~> 0.7.0"
