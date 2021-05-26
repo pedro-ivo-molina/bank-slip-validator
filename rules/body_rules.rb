@@ -597,7 +597,7 @@ module Body
     def validate(bank_slip)
       register_id = bank_slip[0]
   
-      if register_id.to_i.eql?(0)
+      if register_id.to_i.eql?(1)
         return true
       else
         @error = 'Identificação do registro, coluna 001 da linha 02, deve ser obrigatoriamente 1.'
