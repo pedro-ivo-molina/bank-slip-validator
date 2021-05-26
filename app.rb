@@ -9,7 +9,7 @@ require_relative 'serializer'
 
 class BankSlipValidator < Sinatra::Base
   post '/validate' do
-    bank_slip = params[:file][:tempfile].readlines
+    #bank_slip = params[:file][:tempfile].readlines
 
     p params
 
