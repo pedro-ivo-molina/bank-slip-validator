@@ -7,7 +7,17 @@ require_relative 'rules/initializer'
 require_relative 'validator'
 require_relative 'serializer'
 
+require 'sinatra/cross_origin'
+
 class BankSlipValidator < Sinatra::Base
+  configure do
+    enable :cross_origin
+  end
+
+  before do
+    response.headers['Access-Control-Allow-Origin'] = '*'
+  end
+
   post '/validate' do
     bank_slip = params[:file][:tempfile].readlines
 

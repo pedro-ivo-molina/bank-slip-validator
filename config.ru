@@ -1,6 +1,6 @@
 require 'rubygems'
 
-require 'sinatra/base'
+require 'sinatra'
 require 'active_support/all'
 require 'json'
 require 'rack/ssl'
@@ -9,7 +9,6 @@ require 'nokogiri'
 require 'shotgun'
 require 'puma'
 require 'rspec'
-require 'sinatra/strong-params'
 require 'pry-byebug'
 
 require './app'

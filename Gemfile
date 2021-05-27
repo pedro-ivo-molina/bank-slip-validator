@@ -11,7 +11,7 @@ gem 'puma'
 gem 'bundler'
 gem 'activesupport'
 gem 'nokogiri'
-gem 'sinatra-strong-params'
+gem "sinatra-cross_origin", "~> 0.3.1" 
 
 gem "pry-byebug"
 
