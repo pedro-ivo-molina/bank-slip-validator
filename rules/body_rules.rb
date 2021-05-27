@@ -15,7 +15,7 @@ module Body
         return true
       else
         @annotation = "Endereçamento para aviso de débito automático em conta corrente não foi preenchido."
-        return true
+        return false
       end
     end
   
